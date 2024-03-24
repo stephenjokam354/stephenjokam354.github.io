@@ -86,7 +86,12 @@ function message(pesan){
     //buat fade up / pun lainnya:)
 
 }
-
+function playLagu(){
+    document.getElementById("song").play();
+          document.getElementById("song").volume = 0.3;
+}
+playLagu();
+          
 
 
 
