@@ -62,7 +62,7 @@ function typeWriterEffect(){
         type();
     }
 
-    typeWriterEffect();
+    
     
 
 function message(pesan){
@@ -90,7 +90,20 @@ function playLagu(){
     document.getElementById("song").play();
           document.getElementById("song").volume = 0.3;
 }
-playLagu();
+
+
+function buttonHero(i){
+    switch(i){
+        case 1 :
+            document.getElementById("hero1").style.display = "none";
+            typeWriterEffect();
+            playLagu();
+            break;
+        case 2 :
+            document.location.href = "../stephen.html";
+            break;
+    }
+}
           
 
 

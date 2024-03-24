@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="hero" id="hero1">
+      <button onclick="buttonHero(1)" id="button">
+        <img src="../img/icon gibli.png" alt="" width="50" />
+      </button>
+      <h1>Click Me!</h1>
+    </div>
     <div class="hero">
-      <button
-        onclick="document.location.href='../stephen.html'"
-        id="button"
-        disabled
-      >
-        <audio id="song" autoplay loop>
+      <button onclick="buttonHero(2)" id="button" disabled>
+        <audio id="song" loop>
           <source
             src="../music/Itsumo nando demo - kimura yumi (Spirted away AMV) Lyric dan terjemah (320 kbps).mp3"
             type="audio/mp3"
