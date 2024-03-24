@@ -1,0 +1,188 @@
+:root {
+  --ijo: #16a085;
+  --ijoHover: #074337;
+  --gradient: linear-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.9)
+  );
+  --ungu: rgb(99, 15, 94);
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/655047.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.time {
+  position: absolute;
+  left: 50%;
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
+  transform: translateX(-50%) translateY(-200px);
+}
+.time p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.login {
+  width: 500px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.9)
+  );
+  box-shadow: 0px 5px 5px rgba(0 0 0/0.5);
+  border-radius: 25px;
+  animation: fade 1s;
+}
+@keyframes fade {
+  0% {
+    margin-top: 50px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 100%;
+  }
+}
+@keyframes fade2 {
+  0% {
+    margin-top: 50px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 100%;
+  }
+}
+
+.login img {
+  max-width: 35px;
+  border: 2px black;
+}
+.login .fl1 {
+  border-radius: 10px;
+}
+.fl2 {
+  font-size: 1.1rem;
+}
+.fl2 img {
+  border-radius: 50%;
+}
+.note {
+  margin-top: -10px;
+}
+.balas {
+  color: #16a085;
+  font-weight: 500;
+  font-size: 1rem;
+  border: 0;
+}
+.swal-icon {
+  max-width: 150px;
+}
+
+.btnPesan,
+.kirimPesan {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  display: none;
+  box-shadow: 0px 5px 5px rgba(0 0 0/0.5);
+  position: absolute;
+  left: 50%;
+  animation: 1s btnPesan linear infinite;
+  transform: translateX(-50%) translateY(40px);
+}
+.kirimPesan {
+  display: none;
+  background: var(--ijoHover);
+  color: white;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.iconPesan {
+  position: absolute;
+  left: 32%;
+  transform: translateX(-50%) translateY(-5px);
+}
+.inputPesan {
+  background: var(--ijo) !important;
+  color: white !important;
+  border: none !important;
+}
+.modalPesan {
+  background: var(--ijoHover) !important;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.btnPesan .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+.img_kado {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(40px);
+  background: none;
+  border: none;
+  animation: 1s btnPesan linear infinite;
+}
+.img_kado img {
+  min-width: 80px;
+}
+
+.btnKirim:hover {
+  opacity: 0.5;
+}
+
+.titleBingkai {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  font-family: "Sacramento", cursive;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+@keyframes btnPesan {
+  0% {
+    transform: translateX(-50%) translateY(30px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(40px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(30px);
+  }
+}
+
+.peluk {
+  min-width: 70px;
+}

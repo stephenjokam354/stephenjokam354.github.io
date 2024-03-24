@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghibli</title>
+    <link rel="icon" href="../img/icon gibli.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <button
+        onclick="document.location.href='../stephen.html'"
+        id="button"
+        disabled
+      >
+        <audio id="song" autoplay loop>
+          <source
+            src="../music/Itsumo nando demo - kimura yumi (Spirted away AMV) Lyric dan terjemah (320 kbps).mp3"
+            type="audio/mp3"
+          />
+        </audio>
+        <script>
+          document.getElementById("song").play();
+          document.getElementById("song").volume = 0.3;
+        </script>
+        <img src="../img/icon gibli.png" alt="" width="50" />
+      </button>
+      <!-- <button class="second">
+        <img src="../img/icon song.png" alt="" width="100" />
+      </button> -->
+
+      <h1 class="title"></h1>
+      <h1 class="typewrite"></h1>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

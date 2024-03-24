@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-150px);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+img {
+  animation: zoom 2s infinite;
+}
+@keyframes zoom {
+  0%,
+  100% {
+    width: 50px;
+  }
+  50% {
+    width: 60px;
+  }
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: black;
+  color: white;
+}
+h1 {
+  font-size: 1rem;
+}
+
+.typewrite {
+  position: relative;
+}
+
+.typewrite::after {
+  content: "";
+  width: 1px;
+  border-right: 5px solid white;
+  height: 100%;
+  margin-left: 0.5rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
